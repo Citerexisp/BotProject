@@ -105,3 +105,29 @@
 2024-09-23 20:37:18 DEBUG MyBot:68 - глицерин
 2024-09-23 20:37:28 DEBUG MyBot:68 - гиалуроновая кислота
 2024-09-23 20:37:33 DEBUG MyBot:68 - отправить
+2024-09-23 20:57:56 DEBUG MyBot:68 - /start
+2024-09-23 20:57:59 DEBUG MyBot:68 - Что я умею
+2024-09-23 21:01:39 DEBUG MyBot:68 - /start
+2024-09-23 21:01:42 DEBUG MyBot:68 - Что я умею
+2024-09-23 21:02:20 DEBUG MyBot:68 - Глицерин
+2024-09-23 21:02:27 DEBUG MyBot:68 - /component глицерин
+2024-09-23 21:03:28 DEBUG MyBot:68 - /start
+2024-09-23 21:03:29 DEBUG MyBot:68 - Что я умею
+2024-09-23 21:03:43 DEBUG MyBot:68 - Отправить
+2024-09-23 21:05:24 DEBUG MyBot:68 - /start
+2024-09-23 21:05:25 DEBUG MyBot:68 - Что я умею
+2024-09-23 21:05:54 DEBUG MyBot:68 - /component Глицерин
+2024-09-23 21:07:05 DEBUG MyBot:68 - /start
+2024-09-23 21:07:08 DEBUG MyBot:68 - Что я умею
+2024-09-23 21:07:13 DEBUG MyBot:68 - /component
+2024-09-23 21:07:42 DEBUG MyBot:68 - /component аллантоин
+2024-10-20 14:45:31 DEBUG MyBot:68 - /component
+2024-10-20 14:45:35 DEBUG MyBot:68 - /component
+2024-10-20 14:45:40 DEBUG MyBot:68 - /start
+2024-10-20 14:45:42 DEBUG MyBot:68 - Что я умею
+2024-10-20 14:45:54 DEBUG MyBot:68 - /component глицерин
+2024-10-20 14:46:08 DEBUG MyBot:68 - fsdfsd
+2024-10-20 14:46:10 DEBUG MyBot:68 - fsd
+2024-10-20 14:46:11 DEBUG MyBot:68 - fsd
+2024-10-20 14:46:11 DEBUG MyBot:68 - fsd
+2024-10-20 14:46:14 DEBUG MyBot:68 - Отправить

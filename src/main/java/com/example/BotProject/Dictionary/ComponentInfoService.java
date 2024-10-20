@@ -1,4 +1,4 @@
-package com.example.KarinaProject.Dictionary;
+package com.example.BotProject.Dictionary;
 
 import java.util.HashMap;
 import java.util.Map;

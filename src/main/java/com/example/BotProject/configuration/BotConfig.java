@@ -1,11 +1,10 @@
-package com.example.KarinaProject.configuration;
+package com.example.BotProject.configuration;
 
-import com.example.KarinaProject.controller.MyBot;
+import com.example.BotProject.controller.MyBot;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
-import org.telegram.telegrambots.meta.api.methods.updates.SetWebhook;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 

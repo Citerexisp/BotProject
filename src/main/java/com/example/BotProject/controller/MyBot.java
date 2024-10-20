@@ -1,8 +1,8 @@
-package com.example.KarinaProject.controller;
+package com.example.BotProject.controller;
 
-import com.example.KarinaProject.Dictionary.ComponentInfoService;
-import com.example.KarinaProject.entity.TelegramUser;
-import com.example.KarinaProject.repository.TelegramUserRepository;
+import com.example.BotProject.Dictionary.ComponentInfoService;
+import com.example.BotProject.entity.TelegramUser;
+import com.example.BotProject.repository.TelegramUserRepository;
 import lombok.extern.log4j.Log4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
@@ -18,7 +18,7 @@ import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.Keyboard
 
 import org.telegram.telegrambots.meta.api.objects.replykeyboard.buttons.KeyboardRow;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import com.example.KarinaProject.Dictionary.ComponentInfoService;
+
 import java.util.*;
 
 
@@ -76,7 +76,7 @@ public class MyBot extends TelegramLongPollingBot {
             } else if ("Анализировать состав".equalsIgnoreCase(messageText)) {
                 startCompositionAnalysis(chatId);  // Начинаем процесс анализа состава
             } else if ("Рассказывает об отдельных компонентах".equalsIgnoreCase(messageText)) {
-                sendMessage(chatId, "Введите название компонента, и я расскажу о нем.");
+                sendMessage(chatId, "Введите название компонента, и я расскажу о нем. Пример ввода - /component глицерин");
             }
               else if(messageText.startsWith("/component ")){
                 String componentName = messageText.substring(11).toLowerCase().trim();
@@ -106,7 +106,7 @@ public class MyBot extends TelegramLongPollingBot {
                     startCompositionAnalysis(chatId);
                     break;
                 case "describe":
-                    sendMessage(chatId, "Введите название компонента, и я расскажу о нем.");
+                    sendMessage(chatId, "Введите название компонента, и я расскажу о нем. Пример ввода - /component глицерин");
                     break;
                 default:
                     sendMessage(chatId, "Неизвестная команда.");
@@ -119,7 +119,7 @@ public class MyBot extends TelegramLongPollingBot {
     private void sendWelcomeMessage(Long chatId) {
         SendMessage message = new SendMessage();
         message.setChatId(chatId.toString());  // Преобразуем chatId в строку
-        message.setText("Привет! Я бот, который поможет вам анализировать состав продуктов.");
+        message.setText("Привет! Я бот, который поможет вам анализировать состав косметики.");
 
         // Создаем клавиатуру
         ReplyKeyboardMarkup keyboardMarkup = new ReplyKeyboardMarkup();
@@ -151,7 +151,7 @@ public class MyBot extends TelegramLongPollingBot {
     private void sendCapabilities(Long chatId) {
         SendMessage message = new SendMessage();
         message.setChatId(chatId.toString());  // Преобразуем chatId в строку
-        message.setText("Вот что я умею:\n1. Анализировать состав\n2. Рассказать об отдельном компоненте");
+        message.setText("Вот что я умею:");
 
         // Создаем инлайн клавиатуру
         InlineKeyboardMarkup keyboardMarkup = new InlineKeyboardMarkup();
@@ -165,7 +165,7 @@ public class MyBot extends TelegramLongPollingBot {
 
         // Кнопка "Рассказывать об отдельных компонентах"
         row1.add(InlineKeyboardButton.builder()
-                .text("Рассказывать об отдельных компонентах")
+                .text("Анализировать отдельные компоненты")
                 .callbackData("describe")
                 .build());
 

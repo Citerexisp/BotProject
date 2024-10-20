@@ -1,4 +1,4 @@
-package com.example.KarinaProject.entity;
+package com.example.BotProject.entity;
 
 
 import jakarta.persistence.*;
